@@ -4,6 +4,7 @@
 get_header();
 
 ?>
+
 <div class="ContainerError">
     <div class="info">
         <div class="glitch-bloc">
@@ -16,6 +17,9 @@ get_header();
     </div>
 </div>
 
-</body>
+<?php
 
-</html>
+//------------------------------- HEADER ---------------------------
+get_footer();
+
+?>
