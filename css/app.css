@@ -1,22 +1,435 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
+/* =Reset
+-------------------------------------------------------------- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
   margin: 0;
+  outline: 0;
   padding: 0;
-  overflow-x: hidden;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+  /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+  overflow-y: scroll;
+  /* Keeps page centred in all browsers regardless of content height */
+  -webkit-text-size-adjust: 100%;
+  /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+  -ms-text-size-adjust: 100%;
+  /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
   scroll-behavior: smooth;
-  scrollbar-color: #fff;
-  scrollbar-width: thin;
 }
 
-::-webkit-scrollbar {
-  width: 3px;
-  background-color: hsla(0deg, 0%, 100%, 0.16);
+body {
+  background: #fff;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #ff0000;
+body::-webkit-scrollbar {
+  width: 17px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #001d3d;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffc300;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 5px solid #001d3d;
+  /* creates padding around scroll thumb */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+  outline: 0;
+}
+
+a img {
+  border: 0;
+}
+
+@font-face {
+  font-family: "kameron-bold";
+  src: url(../font/kameron/Kameron-Bold.woff);
+}
+@font-face {
+  font-family: "kameron-bold-compressed";
+  src: url(../font/kameron/Kameron-Bold.woff2);
+}
+@font-face {
+  font-family: "kameron-regular";
+  src: url(../font/kameron/Kameron-Regular.woff);
+}
+@font-face {
+  font-family: "kameron-regular-compressed";
+  src: url(../font/kameron/Kameron-Regular.woff2);
+}
+/** ----------------------- **/
+@font-face {
+  font-family: "montserrat-light";
+  src: url(../font/montserrat/Montserrat-Light.woff);
+}
+@font-face {
+  font-family: "montserrat-regular";
+  src: url(../font/montserrat/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url(../font/montserrat/Montserrat-SemiBold.woff);
+}
+@font-face {
+  font-family: "montserrat-bold";
+  src: url(../font/montserrat/Montserrat-Bold.woff);
+}
+@font-face {
+  font-family: "montserrat-light-compressed";
+  src: url(../font/montserrat/Montserrat-Light.woff2);
+}
+@font-face {
+  font-family: "montserrat-regular-compressed";
+  src: url(../font/montserrat/Montserrat-Regular.woff2);
+}
+@font-face {
+  font-family: "montserrat-semibold-compressed";
+  src: url(../font/montserrat/Montserrat-SemiBold.woff2);
+}
+@font-face {
+  font-family: "montserrat-bold-compressed";
+  src: url(../font/montserrat/Montserrat-Bold.woff2);
+}
+header {
+  position: relative;
+}
+header .HomeFilter {
+  background-color: #000;
+  opacity: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+header.PrimaryHeader {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header.SecondHeader {
+  height: 40vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .HeaderNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #001d3d;
+  height: 75px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .HeaderNav .NavContainer.Nav .NavList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+header .HeaderNav .NavContainer.Img {
+  width: 95px;
+  margin: 0 40px;
+}
+header .HeaderNav .NavContainer.Nav .NavList a {
+  font-size: 22px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  color: #eee;
+  text-decoration: none;
+  margin: 0 40px;
+}
+header .HeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 75px);
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+header .HeaderContainer h1 {
+  color: #eee;
+  font-size: 180px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-align: center;
+}
+header .HeaderContainer h2 {
+  color: #eee;
+  font-size: 50px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-align: center;
+}
+header .HeaderContain {
+  margin: 30px 0;
+}
+
+.error404 footer {
+  display: none;
+}
+
+main section article.HomePage.FirstSection {
+  color: #001d3d;
+}
+main section article.HomePage.FirstSection div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 70px 0;
+}
+main section article.HomePage.FirstSection div h2 {
+  font-size: 70px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  margin-bottom: 50px;
+}
+main section article.HomePage.FirstSection div h3 {
+  font-size: 24px;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  margin-bottom: 50px;
+}
+
+main section article.HomePage.SecondSection {
+  color: #001d3d;
+}
+main section article.HomePage.SecondSection div.HomeBlock {
+  margin-bottom: 150px;
+}
+main section article.HomePage.SecondSection div.HomeBlock:nth-child(even) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main section article.HomePage.SecondSection div.HomeBlock:nth-child(odd) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main section article.HomePage.SecondSection div.TextBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 100px;
+}
+main section article.HomePage.SecondSection div.TextBlock h4 {
+  margin-bottom: 50px;
+  font-size: 45px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+}
+main section article.HomePage.SecondSection div.TextBlock p {
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  text-align: center;
+}
+main section article.HomePage.SecondSection div.TextBlock a {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition-duration: 500ms;
+}
+main section article.HomePage.SecondSection div.TextBlock a:hover {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+main section article.HomePage.ThirdSection .AboutusTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 70px 0;
+}
+main section article.HomePage.ThirdSection .AboutusTitle h2 {
+  font-size: 70px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+}
+main section article.HomePage.ThirdSection .AboutusBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main section article.HomePage.ThirdSection .AboutusText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 100px;
+}
+main section article.HomePage.ThirdSection .AboutusBlock p {
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+}
+main section article.HomePage.ThirdSection .AboutusBlock a {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition-duration: 500ms;
+}
+main section article.HomePage.ThirdSection .AboutusBlock a:hover {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  padding: 15px 40px;
+  text-decoration: none;
 }
 
 div.ContainerError {
@@ -25,8 +438,11 @@ div.ContainerError {
   align-items: center;
   background-color: #000;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
+}
+.admin-bar div.ContainerError {
+  height: calc(100vh - 32px);
 }
 
 div.info {
@@ -77,7 +493,7 @@ div.info {
 .txt-info {
   font-family: Open Sans, sans-serif;
   color: #f1f1f1;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @keyframes glitchAnim1 {
