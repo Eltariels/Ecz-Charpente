@@ -2,12 +2,14 @@
 
 @import 'base/reset';
 @import 'base/variables';
+@import 'base/font';
 
 @import 'layout/header';
 @import 'layout/footer';
 
 @import 'pages/page-home';
 @import 'pages/page-realisation';
+@import 'pages/page-solarpanel';
 @import 'pages/page-service';
 @import 'pages/page-contact';
 
