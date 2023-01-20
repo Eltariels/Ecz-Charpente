@@ -226,10 +226,55 @@ header.PrimaryHeader {
   background-size: cover;
   background-repeat: no-repeat;
 }
+header.PrimaryHeader .HeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 75px);
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+header.PrimaryHeader .HeaderContainer h1 {
+  color: #eee;
+  font-size: 180px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-align: center;
+}
+header.PrimaryHeader .HeaderContainer h2 {
+  color: #eee;
+  font-size: 50px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-align: center;
+}
+header.PrimaryHeader .HeaderContain {
+  margin: 30px 0;
+}
 header.SecondHeader {
   height: 40vh;
   background-size: cover;
   background-repeat: no-repeat;
+}
+header.SecondHeader .HeaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(40vh - 75px);
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+header.SecondHeader .HeaderContainer h1 {
+  color: #eee;
+  font-size: 70px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-align: center;
 }
 header .HeaderNav {
   display: flex;
@@ -262,33 +307,6 @@ header .HeaderNav .NavContainer.Nav .NavList a {
   color: #eee;
   text-decoration: none;
   margin: 0 40px;
-}
-header .HeaderContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 75px);
-  flex-direction: column;
-  max-width: 100%;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-header .HeaderContainer h1 {
-  color: #eee;
-  font-size: 180px;
-  font-family: "kameron-bold-compressed", "kameron-bold";
-  text-align: center;
-}
-header .HeaderContainer h2 {
-  color: #eee;
-  font-size: 50px;
-  font-family: "kameron-bold-compressed", "kameron-bold";
-  text-align: center;
-}
-header .HeaderContain {
-  margin: 30px 0;
 }
 
 .error404 footer {
@@ -425,6 +443,82 @@ main section article.HomePage.ThirdSection .AboutusBlock a {
   transition-duration: 500ms;
 }
 main section article.HomePage.ThirdSection .AboutusBlock a:hover {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  padding: 15px 40px;
+  text-decoration: none;
+}
+
+main section article.RealisationPage.MainBlock div h2 {
+  font-size: 45px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  color: #001d3d;
+  background-color: #EAEEF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  margin-bottom: 100px;
+  max-width: 100%;
+  width: 100%;
+  height: 160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+main section article.RealisationPage.MainBlock .BlockContain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 200px;
+}
+main section article.RealisationPage.MainBlock .BlockContain:last-of-type {
+  margin-bottom: 50px;
+}
+main section article.RealisationPage.MainBlock .BlockContain .ImgBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+main section article.RealisationPage.MainBlock .BlockContain .ImgBlock .ImgOne,
+main section article.RealisationPage.MainBlock .BlockContain .ImgBlock .ImgTwo {
+  margin: 0 100px;
+}
+main section article.RealisationPage.MainBlock .BlockContain .TextBlock {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  color: #001d3d;
+}
+main section article.RealisationPage.MainBlock .RealisationPage.Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main section article.RealisationPage.MainBlock .RealisationPage.Link a {
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  padding: 15px 40px;
+  text-decoration: none;
+  transition-duration: 500ms;
+}
+main section article.RealisationPage.MainBlock .RealisationPage.Link a:hover {
   font-size: 18px;
   font-family: "kameron-bold-compressed", "kameron-bold";
   background-color: #FFD60A;
