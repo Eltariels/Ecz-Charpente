@@ -66,6 +66,7 @@ $iconhome = get_field('iconhome', 'option');
 
         <header class="PrimaryHeader" style="background-image: url(<?php if (!empty($bgimghome)) : ?><?php echo ($bgimghome['url']); ?><?php endif; ?>) ">
             <div class="HomeFilter"></div>
+
             <div class="HeaderNav">
                 <div class="NavContainer Img">
                     <?php if (!empty($logonav)) : ?>
@@ -98,7 +99,7 @@ $iconhome = get_field('iconhome', 'option');
             </div>
         </header>
 
-    <?php else : ?> 
+    <?php else : ?>
 
         <header class="SecondHeader" style="background-image: url(<?php if (!empty($bgimghome)) : ?><?php echo ($bgimghome['url']); ?><?php endif; ?>) ">
             <div class="HomeFilter"></div>
@@ -118,9 +119,7 @@ $iconhome = get_field('iconhome', 'option');
 
             <div class="HeaderContainer">
                 <div class="HeaderContain Title">
-                    <?php if (!empty($maintitlehome)) : ?>
-                        <h1><?php echo ($maintitlehome); ?></h1>
-                    <?php endif; ?>
+                    <h1><?php echo(get_the_title()); ?></h1>
                 </div>
             </div>
         </header>
