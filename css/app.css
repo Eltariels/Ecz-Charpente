@@ -386,6 +386,7 @@ main section article.HomePage.SecondSection div.TextBlock a {
   font-size: 18px;
   font-family: "kameron-bold-compressed", "kameron-bold";
   background-color: #FFC300;
+  color: #001d3d;
   padding: 15px 40px;
   text-decoration: none;
   transition-duration: 500ms;
@@ -485,15 +486,18 @@ main section article.RealisationPage.MainBlock .BlockContain .ImgBlock {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
   max-width: 100%;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 50px;
 }
-main section article.RealisationPage.MainBlock .BlockContain .ImgBlock .ImgOne,
-main section article.RealisationPage.MainBlock .BlockContain .ImgBlock .ImgTwo {
-  margin: 0 100px;
+main section article.RealisationPage.MainBlock .BlockContain .ImgOne img,
+main section article.RealisationPage.MainBlock .BlockContain .ImgTwo img {
+  max-width: 100%;
+  height: auto;
 }
 main section article.RealisationPage.MainBlock .BlockContain .TextBlock {
   font-size: 18px;

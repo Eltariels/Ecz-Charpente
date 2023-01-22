@@ -40,6 +40,8 @@ main section article.RealisationPage.MainBlock {
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 150px;
         max-width: 100%;
         width: 100%;
         margin-right: auto;
@@ -47,9 +49,10 @@ main section article.RealisationPage.MainBlock {
         margin-bottom: 50px;
     }
 
-    .BlockContain .ImgBlock .ImgOne,
-    .BlockContain .ImgBlock .ImgTwo {
-        margin: 0 100px;
+    .BlockContain .ImgOne img,
+    .BlockContain .ImgTwo img {
+        max-width: 100%;
+        height: auto;
     }
 
     .BlockContain .TextBlock {

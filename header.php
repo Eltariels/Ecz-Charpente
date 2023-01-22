@@ -74,7 +74,7 @@ $iconhome = get_field('iconhome', 'option');
                     <?php endif; ?>
                 </div>
                 <?php wp_nav_menu(array(
-                    'menu' => 'main_menu',
+                    'menu' => ID_MAIN_NAV,
                     'container_class' => 'NavContainer Nav',
                     'menu_class' => 'NavList'
                 )); ?>
@@ -110,7 +110,7 @@ $iconhome = get_field('iconhome', 'option');
                     <?php endif; ?>
                 </div>
                 <?php wp_nav_menu(array(
-                    'menu' => 'main_menu',
+                    'menu' => ID_MAIN_NAV,
                     'container_class' => 'NavContainer Nav',
                     'menu_class' => 'NavList',
                     'menu_id' => false

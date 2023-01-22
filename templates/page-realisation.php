@@ -21,7 +21,7 @@ $block_realisations = get_field('block_realisations');
             <article class="RealisationPage MainBlock">
 
                 <div class="RealisationPage Title">
-                    <h2 class=""><?php echo ($block_realisation['titleblock_realisations']); ?></h2>
+                    <h2 id="<?php echo (sanitize_title($block_realisation['titleblock_realisations'])); ?>" class=""><?php echo ($block_realisation['titleblock_realisations']); ?></h2>
                 </div>
                 
                 <div class="RealisationPage BlockContainer">

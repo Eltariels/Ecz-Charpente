@@ -24,7 +24,7 @@ $imgcertification_solarpanels = get_field('imgcertification_solarpanel');
         <?php foreach ($mainblocks_solarpanel as $mainblock_solarpanel) : ?>
             <article class="SolarpanelPage FirstSection">
                 <div class="title">
-                    <h2><?php echo ($mainblock_solarpanel['mainblock_solarpanel']['title_block_solarpanel']); ?></h2>
+                    <h2 id="<?php echo (sanitize_title($mainblock_solarpanel['mainblock_solarpanel']['title_block_solarpanel'])); ?>"><?php echo ($mainblock_solarpanel['mainblock_solarpanel']['title_block_solarpanel']); ?></h2>
                 </div>
                 <div class="SolarpanelPage block">
                     <div class="SolarpanelPage FirstBlockContain">
