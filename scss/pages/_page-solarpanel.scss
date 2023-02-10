@@ -1,0 +1,234 @@
+main section .SolarpanelPage.FirstSection {
+    .Title {
+        background-color: #EAEEF2;
+        color: $color-title;
+        font-size: $subtitle-font-size;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-family: $title-font-family;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 160px;
+        width: 100%;
+    }
+
+    .BlockContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+
+        .BlockContain {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            margin-bottom: 100px;
+
+            .FirstBlockContain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+                width: 40%;
+                border: 2px solid $color-primary;
+
+                h3 {
+                    color: $color-title;
+                    font-family: $title-font-family;
+                    font-size: $subsubtitle-font-size;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                p {
+                    color: $color-text;
+                    font-family: $text-font-family;
+                    font-size: $text-font-size;
+                    margin-bottom: 20px;
+                    width: 80%;
+                    max-width: 100%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    line-height: 30px;
+                }
+
+                strong {
+                    font-family: "montserrat-bold-compressed", "montserrat-bold";
+                }
+            }
+
+            .SecondBlockContain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+                width: 40%;
+            }
+        }
+
+        .Link {
+            margin-bottom: 100px;
+            font-size: $text-font-size;
+            font-family: $title-font-family;
+            background-color: $color-secondary;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 50px;
+            transition-duration: 500ms;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
+
+        .Link:hover {
+            margin-bottom: 100px;
+            font-size: $text-font-size;
+            font-family: $title-font-family;
+            background-color: $color-third;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 50px;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
+    }
+
+}
+
+main section .SolarpanelPage.SecondSection {
+    .Title {
+        background-color: #EAEEF2;
+        color: $color-title;
+        font-size: $subtitle-font-size;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-family: $title-font-family;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 160px;
+        width: 100%;
+    }
+
+    .FirstBlockContain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+
+        p {
+            color: $color-text;
+            font-family: $text-font-family;
+            font-size: $text-font-size;
+            margin-bottom: 50px;
+        }
+
+        .LogoCertif {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 60px 90px;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 80%;
+            margin-bottom: 50px;
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+        }
+    }
+
+    .Link {
+        margin-bottom: 100px;
+        font-size: $text-font-size;
+        font-family: $title-font-family;
+        background-color: $color-secondary;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
+        transition-duration: 500ms;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+
+    .Link:hover {
+        margin-bottom: 100px;
+        font-size: $text-font-size;
+        font-family: $title-font-family;
+        background-color: $color-third;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+}
