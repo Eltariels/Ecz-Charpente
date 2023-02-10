@@ -1,13 +1,15 @@
 <?php
 
-define('ID_MAIN_NAV', 2); 
-define('ID_FOOTER_NAV', 3); 
+define('ID_MAIN_NAV', 2);
+define('ID_FOOTER_NAV', 3);
 
 add_image_size('imgblochome', '540', '360', false);
 add_image_size('imgaboutus', '540', '360', false);
 add_image_size('imgblockservice', '540', '360', false);
 add_image_size('imgblocksolarpanel', '540', '360', false);
 add_image_size('imgblockrealisation', '540', '360', false);
+add_image_size('imgblockcontact', '100', '100', false);
+add_image_size('imgfooter', '100', '100', false);
 
 //activate menu in theme
 add_theme_support("menus");
