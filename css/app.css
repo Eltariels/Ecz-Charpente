@@ -309,8 +309,94 @@ header .HeaderNav .NavContainer.Nav .NavList a {
   margin: 0 40px;
 }
 
-.error404 footer {
-  display: none;
+footer {
+  height: auto;
+  background-color: #001d3d;
+  margin-top: 50px;
+}
+footer .FooterNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  max-width: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer .FooterNav li {
+  margin-top: 10px;
+}
+footer .FooterNav .FooterListOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 30px;
+}
+footer .FooterNav .FooterListOne .menu-item a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+}
+footer .FooterNav .FooterListOne .menu-item .sub-menu li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+}
+footer .FooterNav .ListFooterSupp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 30px;
+}
+footer .FooterNav .ListFooterSupp ul li {
+  color: #eee;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+}
+footer .FooterNav .ListFooterSupp ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+}
+footer .FooterSubPart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+footer .FooterSubPart img {
+  margin: 30px 0 15px 0;
+  max-width: 100%;
+  width: 10%;
+  height: auto;
+}
+footer .FooterSubPart .FooterText {
+  color: #eee;
+  font-size: 24px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  text-decoration: none;
+  margin-top: 15px;
+}
+footer .FooterSubPart .FooterText:last-child {
+  margin-bottom: 20px;
 }
 
 main section article.HomePage.FirstSection {
@@ -451,83 +537,472 @@ main section article.HomePage.ThirdSection .AboutusBlock a:hover {
   text-decoration: none;
 }
 
-main section article.RealisationPage.MainBlock div h2 {
-  font-size: 45px;
-  font-family: "kameron-bold-compressed", "kameron-bold";
-  color: #001d3d;
-  background-color: #EAEEF2;
+main section .RealisationPage.MainBlock {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 65px;
-  margin-bottom: 100px;
-  max-width: 100%;
-  width: 100%;
-  height: 160px;
-  margin-right: auto;
-  margin-left: auto;
-}
-main section article.RealisationPage.MainBlock .BlockContain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 200px;
+  width: 100%;
 }
-main section article.RealisationPage.MainBlock .BlockContain:last-of-type {
-  margin-bottom: 50px;
-}
-main section article.RealisationPage.MainBlock .BlockContain .ImgBlock {
+main section .RealisationPage.MainBlock .Title {
+  background-color: #EAEEF2;
+  color: #001d3d;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 160px;
+  width: 100%;
+}
+main section .RealisationPage.MainBlock .BlockContainer .BlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+main section .RealisationPage.MainBlock .BlockContainer .BlockContain .ImgBlock {
+  display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 150px;
+  gap: 60px 90px;
+  align-items: center;
   max-width: 100%;
-  width: 100%;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
   margin-bottom: 50px;
 }
-main section article.RealisationPage.MainBlock .BlockContain .ImgOne img,
-main section article.RealisationPage.MainBlock .BlockContain .ImgTwo img {
-  max-width: 100%;
+main section .RealisationPage.MainBlock .BlockContainer .BlockContain .ImgBlock .ImgOne img,
+main section .RealisationPage.MainBlock .BlockContainer .BlockContain .ImgBlock .ImgTwo img {
+  width: 600px;
   height: auto;
 }
-main section article.RealisationPage.MainBlock .BlockContain .TextBlock {
+main section .RealisationPage.MainBlock .BlockContainer .BlockContain .TextBlock {
+  margin-bottom: 70px;
   font-size: 18px;
-  font-family: "kameron-bold-compressed", "kameron-bold";
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
   color: #001d3d;
 }
-main section article.RealisationPage.MainBlock .RealisationPage.Link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  max-width: 100%;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-main section article.RealisationPage.MainBlock .RealisationPage.Link a {
+main section .RealisationPage.MainBlock .Link {
+  margin-bottom: 100px;
   font-size: 18px;
   font-family: "kameron-bold-compressed", "kameron-bold";
   background-color: #FFC300;
-  padding: 15px 40px;
-  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
   transition-duration: 500ms;
 }
-main section article.RealisationPage.MainBlock .RealisationPage.Link a:hover {
+main section .RealisationPage.MainBlock .Link a {
+  text-decoration: none;
+  color: #001d3d;
+}
+main section .RealisationPage.MainBlock .Link:hover {
+  margin-bottom: 100px;
   font-size: 18px;
   font-family: "kameron-bold-compressed", "kameron-bold";
   background-color: #FFD60A;
-  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+main section .RealisationPage.MainBlock .Link:hover a {
   text-decoration: none;
+  color: #001d3d;
+}
+
+main section .SolarpanelPage.FirstSection .Title {
+  background-color: #EAEEF2;
+  color: #001d3d;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 160px;
+  width: 100%;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain .FirstBlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  border: 2px solid #001d3d;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain .FirstBlockContain h3 {
+  color: #001d3d;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain .FirstBlockContain p {
+  color: #001d3d;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 30px;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain .FirstBlockContain strong {
+  font-family: "montserrat-bold-compressed", "montserrat-bold";
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .BlockContain .SecondBlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .Link {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  transition-duration: 500ms;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .Link a {
+  text-decoration: none;
+  color: #001d3d;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .Link:hover {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+main section .SolarpanelPage.FirstSection .BlockContainer .Link:hover a {
+  text-decoration: none;
+  color: #001d3d;
+}
+
+main section .SolarpanelPage.SecondSection .Title {
+  background-color: #EAEEF2;
+  color: #001d3d;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 160px;
+  width: 100%;
+}
+main section .SolarpanelPage.SecondSection .FirstBlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+main section .SolarpanelPage.SecondSection .FirstBlockContain p {
+  color: #001d3d;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+main section .SolarpanelPage.SecondSection .FirstBlockContain .LogoCertif {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px 90px;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  margin-bottom: 50px;
+}
+main section .SolarpanelPage.SecondSection .FirstBlockContain .LogoCertif img {
+  width: 200px;
+  height: auto;
+}
+main section .SolarpanelPage.SecondSection .Link {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  transition-duration: 500ms;
+}
+main section .SolarpanelPage.SecondSection .Link a {
+  text-decoration: none;
+  color: #001d3d;
+}
+main section .SolarpanelPage.SecondSection .Link:hover {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+main section .SolarpanelPage.SecondSection .Link:hover a {
+  text-decoration: none;
+  color: #001d3d;
+}
+
+main section .ServicePage.FirstSection .Title {
+  background-color: #EAEEF2;
+  color: #001d3d;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 160px;
+  width: 100%;
+}
+main section .ServicePage.FirstSection .BlockContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain .FirstBlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  border: 2px solid #001d3d;
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain .FirstBlockContain h3 {
+  color: #001d3d;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain .FirstBlockContain p {
+  color: #001d3d;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 30px;
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain .FirstBlockContain strong {
+  font-family: "montserrat-bold-compressed", "montserrat-bold";
+}
+main section .ServicePage.FirstSection .BlockContainer .BlockContain .SecondBlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+}
+main section .ServicePage.FirstSection .BlockContainer .Link {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFC300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  transition-duration: 500ms;
+}
+main section .ServicePage.FirstSection .BlockContainer .Link a {
+  text-decoration: none;
+  color: #001d3d;
+}
+main section .ServicePage.FirstSection .BlockContainer .Link:hover {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-family: "kameron-bold-compressed", "kameron-bold";
+  background-color: #FFD60A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+}
+main section .ServicePage.FirstSection .BlockContainer .Link:hover a {
+  text-decoration: none;
+  color: #001d3d;
+}
+
+main section .ContactIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section .ContactIcon .BlockContain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 75px;
+}
+main section .ContactIcon .BlockContain img {
+  margin-bottom: 20px;
+}
+main section .ContactIcon .BlockContain p {
+  color: #001d3d;
+  font-family: "montserrat-regular-compressed", "montserrat-regular";
+  font-size: 18px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main div.wpforms-container-full .wpforms-form * {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+main div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 div.ContainerError {
