@@ -1,0 +1,109 @@
+main section .RealisationPage.MainBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+
+    .Title {
+        background-color: #EAEEF2;
+        color: $color-title;
+        font-size: $subtitle-font-size;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        font-family: $title-font-family;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        height: 160px;
+        width: 100%;
+    }
+
+    .BlockContainer .BlockContain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+
+        .ImgBlock {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 60px 90px;
+            align-items: center;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            margin-bottom: 50px;
+
+            .ImgOne img,
+            .ImgTwo img {
+                width: 600px;
+                height: auto;
+            }
+        }
+
+        .TextBlock {
+            margin-bottom: 70px;
+            font-size: $text-font-size;
+            font-family: $text-font-family;
+            color: $color-text;
+        }
+    }
+
+    .Link {
+        margin-bottom: 100px;
+        font-size: $text-font-size;
+        font-family: $title-font-family;
+        background-color: $color-secondary;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
+        transition-duration: 500ms;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+
+    .Link:hover {
+        margin-bottom: 100px;
+        font-size: $text-font-size;
+        font-family: $title-font-family;
+        background-color: $color-third;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+        height: 50px;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+}

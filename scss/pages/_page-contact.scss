@@ -1,0 +1,53 @@
+main section .ContactIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .BlockContain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 75px;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $color-text;
+            font-family: $text-font-family;
+            font-size: $text-font-size;
+        }
+    }
+}
+
+main {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    div.wpforms-container-full .wpforms-form * {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    div.wpforms-container-full .wpforms-form .wpforms-submit-container button {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

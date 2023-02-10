@@ -1,91 +1,133 @@
-main section article.RealisationPage.MainBlock {
-    div h2 {
+main section .ServicePage.FirstSection {
+    .Title {
+        background-color: #EAEEF2;
+        color: $color-title;
         font-size: $subtitle-font-size;
-        font-family: $title-font-family;
-        color: $color-title;
-        background-color: $bg-c-title;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        margin-top: 65px;
+        margin-top: 50px;
         margin-bottom: 100px;
+        font-family: $title-font-family;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 100%;
-        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
         height: 160px;
-        margin-right: auto;
-        margin-left: auto;
+        width: 100%;
     }
 
-    .BlockContain {
+    .BlockContainer {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-        max-width: 100%;
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 200px;
-    }
-
-    .BlockContain:last-of-type {
-        margin-bottom: 50px;
-    }
-
-    .BlockContain .ImgBlock {
-        display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 150px;
         max-width: 100%;
-        width: 100%;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 50px;
-    }
-
-    .BlockContain .ImgOne img,
-    .BlockContain .ImgTwo img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .BlockContain .TextBlock {
-        font-size: $text-font-size;
-        font-family: $title-font-family;
-        color: $color-title;
-    }
-
-    .RealisationPage.Link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        max-width: 100%;
         width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-    }
 
-    .RealisationPage.Link a {
-        font-size: $text-font-size;
-        font-family: $title-font-family;
-        background-color: $color-secondary;
-        padding: 15px 40px;
-        text-decoration: none;
-        transition-duration: 500ms;
-    }
+        .BlockContain {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            margin-bottom: 100px;
 
-    .RealisationPage.Link a:hover {
-        font-size: $text-font-size;
-        font-family: $title-font-family;
-        background-color: $color-third;
-        padding: 15px 40px;
-        text-decoration: none;
+            .FirstBlockContain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+                width: 40%;
+                border: 2px solid $color-primary;
+
+                h3 {
+                    color: $color-title;
+                    font-family: $title-font-family;
+                    font-size: $subsubtitle-font-size;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+
+                p {
+                    color: $color-text;
+                    font-family: $text-font-family;
+                    font-size: $text-font-size;
+                    margin-bottom: 20px;
+                    width: 80%;
+                    max-width: 100%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    line-height: 30px;
+                }
+
+                strong {
+                    font-family: "montserrat-bold-compressed", "montserrat-bold";
+                }
+            }
+
+            .SecondBlockContain {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                max-width: 50%;
+                margin-right: auto;
+                margin-left: auto;
+                width: 40%;
+            }
+        }
+
+        .Link {
+            margin-bottom: 100px;
+            font-size: $text-font-size;
+            font-family: $title-font-family;
+            background-color: $color-secondary;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 50px;
+            transition-duration: 500ms;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
+
+        .Link:hover {
+            margin-bottom: 100px;
+            font-size: $text-font-size;
+            font-family: $title-font-family;
+            background-color: $color-third;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 50px;
+
+            a {
+                text-decoration: none;
+                color: $color-text;
+            }
+        }
     }
 }
