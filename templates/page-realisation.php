@@ -23,7 +23,7 @@ $block_realisations = get_field('block_realisations');
                 <div class="RealisationPage Title">
                     <h2 id="<?php echo (sanitize_title($block_realisation['titleblock_realisations'])); ?>" class=""><?php echo ($block_realisation['titleblock_realisations']); ?></h2>
                 </div>
-                
+
                 <div class="RealisationPage BlockContainer">
                     <?php foreach ($block_realisation['containblock_realisations'] as $i => $containblock_realisation) : ?>
                         <div class="RealisationPage BlockContain">
